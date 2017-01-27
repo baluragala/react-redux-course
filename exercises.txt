@@ -1,0 +1,2 @@
+1. Create a component which displays headings from h1-h6 with all having text as React is AWESOME
+2. Create a component

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+    <title>Just React</title>
+
+</head>
+<body>
+<div id="reactKingdom"></div>
+</body>
+<script type="text/jsx">
+
+    //ES5 style
+
+    /*
+     By including react.js lib via script tag - a global variable React is available
+     By including react-dom.js lib via script tag - a global variable ReactDOM is available
+     */
+
+    // create a react component
+    const HelloReact = React.createClass({
+        /* React is all about UI - most important method render*/
+        render: function () {
+            return <div>
+                Hello React!
+            </div>
+        }
+    });
+
+    // React, please render this class
+    const element = React.createElement(HelloReact);
+
+    // ReactDOM - DOM utils from react, after you render this class, please place it in div tag with id reactKingdom
+    ReactDOM.render(element, document.getElementById('reactKingdom'));
+</script>
+</html>
+
