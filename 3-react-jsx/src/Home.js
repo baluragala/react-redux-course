@@ -15,7 +15,7 @@ class Home extends Component {
 
       /*
        className is attribute, used to apply css classes you cannot use class html attribute here
-       due to the fact that you are writing code in JS and class in reseverd word in JSX. Values
+       due to the fact that you are writing code in JS and class in reserved word in JSX. Values
        provided for className attribute will be mapped to class attribute in original DOM
        */
 

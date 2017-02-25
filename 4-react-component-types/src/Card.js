@@ -5,7 +5,9 @@
 // see what happens if you remove the following import
 import React from 'react';
 import Style from './Card.css';
-
+/**
+ * Stateless functional component
+ */
 const Card = ({title, content}) => {
   return (
     <div className="cardContainer">

@@ -1,0 +1,6 @@
+/**
+ * Created by baluteju on 2/26/2017.
+ */
+{
+    "presets" : ["es2015", "react"]
+}

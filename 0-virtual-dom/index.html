@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A journey with DOM & VDOM</title>
+    <style>
+        .move-by-50{
+            padding-left:50px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="Move By 5px" onclick="move()"/>
+<script>
+    for(let i=1;i<=500000;i++){
+        let p = document.createElement("p");
+        p.innerText=`I am paragraph element ${i}`;
+        document.body.appendChild(p);
+    }
+    
+    function move() {
+        let elements = document.getElementsByTagName("p");
+        console.log(new Date());
+        for(ele of elements){
+            ele.className = "move-by-50";
+        }
+        console.log(new Date());
+    }
+</script>
+</body>
+</html>

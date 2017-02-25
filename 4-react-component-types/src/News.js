@@ -4,11 +4,15 @@
 import React, {Component} from 'react';
 import Card from './Card';
 
+/**
+ * Class based stateful component
+ */
 class News extends Component {
   constructor(props) {
     super(props);
   }
 
+  /*life cycle method*/
   componentWillMount() {
     const news = [
       {title: 'React uses virtual DOM', content: 'Virtual DOM makes pages rendering super speed'},

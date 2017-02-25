@@ -1,0 +1,13 @@
+.cardContainer{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+}
+
+.title{
+    align-items: center;
+}
