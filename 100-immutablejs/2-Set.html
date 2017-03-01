@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set with ImmutableJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.min.js"></script>
+</head>
+<body>
+<script>
+  const plainSet = new Immutable.Set([ 4, 3, 2, 1, 1, 2, 3, 4]);
+
+  console.log(plainSet.toJS())
+  for (i of plainSet)
+    console.log(i);
+  console.log('**********************************')
+
+  const newSet = plainSet.add(20);
+
+  for (i of newSet)
+    console.log(i);
+  console.log('**********************************')
+  const anotherNewSet = newSet.delete(1);
+
+  for (i of anotherNewSet)
+    console.log(i);
+  console.log('**********************************')
+
+
+</script>
+</body>
+</html>

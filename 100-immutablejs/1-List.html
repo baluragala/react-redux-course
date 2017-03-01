@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List with ImmutableJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.min.js"></script>
+</head>
+<body>
+<script>
+  const array1 = ['Apple'];
+  array1.push('Banana');
+
+  // Output:
+  console.log(array1);
+
+  console.log('*************************************************');
+
+  const array2 = Immutable.List.of('Apple');
+  const array3 = array2.push('Banana');
+
+  // Output:
+  console.log(array2.toJS());
+  console.log(array3.toJS());
+
+  console.log('******************MORE EXAMPELS Rihght from ImmutablesJS website*********************');
+  console.log('https://facebook.github.io/immutable-js/docs/#/List');
+  Immutable.List().toJS(); // []
+
+  const plainArray = [1, 2, 3, 4];
+  const listFromPlainArray =Immutable.List(plainArray);
+
+  console.log(listFromPlainArray.toJS()); // [ 1, 2, 3, 4 ]
+
+</script>
+</body>
+</html>
