@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just Redux</title>
+    <style>
+
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-item {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: darkblue;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            background: cornflowerblue;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            color: white;
+            font-size: 3em;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <div id="result" class="flex-item circle" onclick="store.dispatch(pingPongActionCreator())"></div>
+</div>
+<script>
+
+    /*
+     Excercise : Create an ping-pong app. The should show PING as initial
+     value and by clicking on div it should toggle value between PING and PONG
+     */
+
+    /*
+     Including redux lib in script tag will expose Redux global variable.
+     You can use all redux functionalities by using Redux.xxxxx
+     */
+
+    /* reducer */
+    const reducer = (prevState = 'PING', action) => {
+
+    };
+
+    /* action creators */
+    const pingPongActionCreator = function () {
+
+    };
+
+
+    /* store */
+    const store = Redux.createStore(reducer);
+
+    store.subscribe((state) => {
+        document.getElementById('result').innerText = store.getState();
+    });
+
+    store.dispatch({type: 'INIT'});
+
+    /* subcriber */
+    // Update UI
+    store.subscribe((state) => {
+
+    });
+
+    //log new state
+    store.subscribe((state) => {
+
+    })
+
+</script>
+</body>
+</html>

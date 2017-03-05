@@ -52,7 +52,15 @@
     }
   ],
   "comments": [],
-  "profile": {
-    "name": "typicode"
-  }
+  "users": [
+    {
+      "id": 1,
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@test.com",
+      "password": "1234",
+      "about": "",
+      "avatarUrl": ""
+    }
+  ]
 }

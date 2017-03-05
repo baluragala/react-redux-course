@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Just Redux</title>
+    <style>
+
+        .flex-container {
+            display: -webkit-flex;
+            display: flex;
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-item {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            color: darkblue;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background: cornflowerblue;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            color: white;
+            font-size: 3em;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <button class="circle" onclick="store.dispatch(incrementActionCreator())">+</button>
+    <div class="flex-item" id="counter">0</div>
+    <button class=" circle" onclick="store.dispatch(decrementActionCreator())">-</button>
+</div>
+<script>
+    /*
+     Including redux lib in script tag will expose Redux global variable.
+     You can use all redux functionalities by using Redux.xxxxx
+     */
+
+    /* reducer */
+    const reducer = (prevState = 0, action) => {
+      console.log(action);
+      switch (action.type) {
+        case 'INC':
+          return prevState + action.by;
+        case 'DEC':
+          return prevState - action.by;
+        default:
+          return prevState;
+      }
+    };
+
+    /* action creators */
+    const incrementActionCreator = function () {
+      return {
+        type: 'INC', by: 5
+      }
+    };
+
+    const decrementActionCreator = function () {
+      return {
+        type: 'DEC', by: 5
+      }
+    };
+
+    /* store */
+    const store = Redux.createStore(reducer);
+
+    console.log(store);
+
+    /* subcriber */
+    // Update UI
+    store.subscribe((state) => {
+      document.getElementById('counter').innerText = store.getState();
+    });
+
+    //log new state
+    store.subscribe((state) => {
+      console.log('state:', store.getState());
+    })
+
+</script>
+</body>
+</html>
