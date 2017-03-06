@@ -1,0 +1,41 @@
+exports[`<PostPreview /> renders correctly 1`] = `
+<div
+  className="panel panel-default already-visible come-in">
+  <div
+    className="panel-heading">
+    <a
+      onClick={[Function]}
+      style={Object {}}>
+      test
+    </a>
+  </div>
+  <div
+    className="panel-body">
+    <div>
+      <div
+        className="post-meta">
+        <a>
+          <img
+            role="presentation"
+            src="" />
+        </a>
+        <div
+          className="info">
+          <a
+            className="author" />
+          <span
+            className="date" />
+        </div>
+      </div>
+    </div>
+    <p
+      style={
+        Object {
+          "margin": "5px",
+        }
+      }>
+      test
+    </p>
+  </div>
+</div>
+`;
