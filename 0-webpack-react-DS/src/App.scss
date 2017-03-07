@@ -1,0 +1,12 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: red;
+$secondar-color: green;
+
+.header {
+  font: $font-stack;
+  color: $primary-color;
+}
+
+p {
+  color: $secondar-color;
+}
