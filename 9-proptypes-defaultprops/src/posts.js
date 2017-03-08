@@ -1,0 +1,61 @@
+const posts = [
+  {
+    id:1,
+    title: "Async programming in JS",
+    description: `This blog focuses on demonstrating the solutions that were evolved over the period of time 
+                  to make better coding with asynchronous programming in Javascript; to address problems
+                  like callback hell, pyramid of doom etc.,.`,
+    body: `This blog focuses on demonstrating the solutions that were evolved over the period of time 
+           to make better coding with asynchronous programming in Javascript; to address problems 
+           like callback hell, pyramid of doom etc.,.
+           
+           The objective of these solutions is to make asynchronous programming resemble close 
+           to our mental model. With programming languages like Java, C#, python, code always 
+           executes in synchronously and can be blocking the control – with a valid reason 
+           – those languages have multithreading capabilities and can do multiple things at 
+           same time by spawning multiple threads but Javascript being single threaded 
+           there is no space to block the code execution hence there is a need to work 
+           with single thread efficiently without blocking"`,
+    createdAt: "2017-03-04T07:43:30.495Z",
+    updatedAt: "2017-03-04T07:43:30.495Z",
+    tagList: [],
+    author: {
+      username: "baluragala",
+      bio: "I am me, inspired by tech",
+      image: "https://avatars1.githubusercontent.com/u/6688160?v=3&s=460",
+    },
+    favorited: false,
+    favoritesCount: 0
+  },
+  {
+    id:2,
+    title: "Async programming in JS",
+    description: `This blog focuses on demonstrating the solutions that were evolved over the period of time 
+                  to make better coding with asynchronous programming in Javascript; to address problems
+                  like callback hell, pyramid of doom etc.,.`,
+    body: `This blog focuses on demonstrating the solutions that were evolved over the period of time 
+           to make better coding with asynchronous programming in Javascript; to address problems 
+           like callback hell, pyramid of doom etc.,.
+           
+           The objective of these solutions is to make asynchronous programming resemble close 
+           to our mental model. With programming languages like Java, C#, python, code always 
+           executes in synchronously and can be blocking the control – with a valid reason 
+           – those languages have multithreading capabilities and can do multiple things at 
+           same time by spawning multiple threads but Javascript being single threaded 
+           there is no space to block the code execution hence there is a need to work 
+           with single thread efficiently without blocking"`,
+    createdAt: "2017-03-04T07:43:30.495Z",
+    updatedAt: "2017-03-04T07:43:30.495Z",
+    tagList: [],
+    author: {
+      username: "baluragala",
+      bio: "I am me, inspired by tech",
+      image: "https://avatars1.githubusercontent.com/u/6688160?v=3&s=460",
+    },
+    favorited: false,
+    favoritesCount: 0
+  },
+
+];
+
+export default posts;
