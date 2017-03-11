@@ -1,0 +1,20 @@
+export const POST_GET = 'POST_GET';
+export const POST_GET_SUCCESS = 'POST_GET_SUCCESS';
+export const POST_GET_ERROR = 'POST_GET_ERROR';
+
+export const POST_GET_BY_ID = 'POST_GET_BY_ID';
+export const POST_GET_BY_ID_SUCCESS = 'POST_GET_GET_BY_ID_SUCCESS';
+export const POST_GET_BY_ID_ERROR = 'POST_GET_GET_BY_ID_ERROR';
+
+
+export const POST_ADD = 'POST_ADD';
+export const POST_ADD_SUCCESS = 'POST_ADD_SUCCESS';
+export const POST_ADD_ERROR = 'POST_ADD_ERROR';
+
+export const POST_UPDATE = 'POST_UPDATE';
+export const POST_UPDATE_SUCCESS = 'POST_UPDATE_SUCCESS';
+export const POST_UPDATE_ERROR = 'POST_UPDATE_ERROR';
+
+export const POST_DELETE = 'POST_DELETE';
+export const POST_DELETE_SUCCESS = 'POST_DELETE_SUCCESS';
+export const POST_DELETE_ERROR = 'POST_DELETE_ERROR';

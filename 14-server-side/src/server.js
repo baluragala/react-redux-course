@@ -4,12 +4,12 @@ import { renderToString } from 'react-dom/server';
 import App from './app';
 import template from './template';
 
-const server = express();
+const app = express();
 const PORT = process.env.PORT || 8080;
 
-server.use(express.static('../dist'));
+app.use(express.static('../dist'));
 
-server.get('/', (req, res) => {
+app.get('/', (req, res) => {
   const today = new Date().toDateString();
   const initialState = { today };
   const dom = renderToString(<App {...initialState} />);
@@ -21,7 +21,7 @@ server.get('/', (req, res) => {
   }));
 });
 
-server.listen(PORT,()=>{
+app.listen(PORT,()=>{
   console.log(`Server listening on ${PORT}`);
 });
 
