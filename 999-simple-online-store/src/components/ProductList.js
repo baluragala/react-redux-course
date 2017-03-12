@@ -64,7 +64,7 @@ class ProductList extends React.Component {
     event.preventDefault();
 
     if (this.state.selectedProducts.length === 0) {
-      this.setState({error: 'Please choose atleast one book to continue'});
+      this.setState({error: 'Please choose at least one product to continue'});
     } else {
       this.setState({error: false});
       this.props.updateFormData({selectedProducts: this.state.selectedProducts});

@@ -12,14 +12,20 @@ class Success extends React.Component {
     }
     return (
       <div>
-        <h2>
-          Thank you for shopping with us {this.props.data.fullName}.
-        </h2>
-        <h4>
-          You order {this.props.data.selectedProducts.join(", ")}
-          at {this.props.data.shippingAddress} will delivered
-          {numberOfDays === "Today " ? "Today" : " in " + numberOfDays + " days" }
-        </h4>
+        <div className="panel panel-default">
+          <div className="panel-heading"><h2>
+            Thank you for shopping with us {this.props.data.fullName}.
+          </h2>
+          </div>
+          <div className="panel-body">
+
+            <h4>
+              You order {this.props.data.selectedProducts.join(", ")}
+              at {this.props.data.shippingAddress} will delivered
+              {numberOfDays === "Today " ? "Today" : " in " + numberOfDays + " days" }
+            </h4>
+          </div>
+        </div>
       </div>
     );
   }
