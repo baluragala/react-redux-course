@@ -1,2 +1,17 @@
-1. Create a component which displays headings from h1-h6 with all having text as React is AWESOME
-2. Create a component
+Good references to testing your react understanding online http://hysterical-amusement.surge.sh/
+
+
+1. Create a component which displays headings from h1-h6 with all having text as "React is AWESOME"
+2. Create a component which displays headings from h1-h6 with all having text as "React is AWESOME" without using JSX
+3. Create a component named Header which takes title as prop and displays the header
+4. Create a component named Footer which takes copyright as prop and displays the footer
+5. Create a component named Courses which displays following table
+
+Title               Description                 Category
+Beginning React     Beginning React             WEB
+Beginning Angular   Beginning Angular           WEB
+Beginning Node      Beginning Node              WEB
+Beginning Express   Beginning Express           WEB
+Beginning Ember     Beginning Ember             WEB
+
+Save courses as a array of json objects
